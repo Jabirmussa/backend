@@ -1,6 +1,6 @@
 import express from 'express';
-import cloudinary from '../../lib/cloudinary.js';
-import Book from '../../models/Book.js';
+import cloudinary from '../lib/cloudinary.js';
+import Book from '../models/Book.js';
 import { protectRoute } from '../../src/middleware/auth.middleware.js';
 
 const router = express.Router();
