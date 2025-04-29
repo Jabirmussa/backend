@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 app.use(express.json()); // Middleware to parse JSON data
 
 app.use("/api/auth", authRoutes);
-app.use("/api/books", bookRoutes);
+app.use("/api/book", bookRoutes);
 
 
 app.listen(PORT, () => {
