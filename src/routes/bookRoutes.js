@@ -19,7 +19,7 @@ router.post("/", protectRoute, async (req, res) => {
       caption,
       rating,
       image: imageUrl,
-      user: req.user._
+      user: req.user._id
     });
     await newBook.save();
     res.status(201).json(newBook);
